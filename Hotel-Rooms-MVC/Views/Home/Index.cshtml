@@ -1,0 +1,117 @@
+﻿@model IEnumerable<RoomDTO>
+    <title>Room Management System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/home.css" rel="stylesheet">
+    
+<body>
+    <!-- Hero Section -->
+    <div class="container mt-4">
+        <div class="hero-section">
+            <img src="images/HeroImage.webp" alt="Hotel Room" class="hero-image">
+            <div class="hero-text">
+                <h1>Find Your Perfect Room</h1>
+                <p class="lead">Experience comfort and luxury in our carefully designed accommodations</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rooms Section -->
+    <div class="container my-5">
+        <h2 class="section-title">Available Rooms</h2>
+        
+        <div class="row g-4">
+            @foreach(var room in Model) {
+                <div class="col-md-6 col-lg-4">
+                    <div class="room-card h-100">
+                        <div class="room-image-container">
+                            <img src="@room.ImageUrl" alt="@room.Name" class="room-image">
+                        </div>
+                        <div class="room-details">
+                            <h3 class="room-name">@room.Name</h3>
+                            
+                            <div class="room-description">
+                                @(room.Details)
+                            </div>
+                            
+                           @if (!string.IsNullOrEmpty(room.Amenity)) {
+                                                           <div class="amenity-badges">
+                                                               @{
+                                                                   var amenitiesList = room.Amenity.Split(',', ';', '|');
+                                                                   foreach (var amenity in amenitiesList)
+                                                                   {
+                                                                       var trimmedAmenity = amenity.Trim();
+                                                                       if (trimmedAmenity.ToLower().Contains("wifi") || trimmedAmenity.ToLower().Contains("wi-fi"))
+                                                                       {
+                                                                           <span class="amenity-badge"><i class="fas fa-wifi"></i> WiFi</span>
+                                                                       }
+                                                                       if (trimmedAmenity.ToLower().Contains("tv") || trimmedAmenity.ToLower().Contains("television"))
+                                                                       {
+                                                                           <span class="amenity-badge"><i class="fas fa-tv"></i> TV</span>
+                                                                       }
+                                                                       if (trimmedAmenity.ToLower().Contains("ac") || trimmedAmenity.ToLower().Contains("air") || trimmedAmenity.ToLower().Contains("conditioning"))
+                                                                       {
+                                                                           <span class="amenity-badge"><i class="fas fa-snowflake"></i> AC</span>
+                                                                       }
+                                                                       if (trimmedAmenity.ToLower().Contains("breakfast") || trimmedAmenity.ToLower().Contains("meal"))
+                                                                       {
+                                                                           <span class="amenity-badge"><i class="fas fa-utensils"></i> Breakfast</span>
+                                                                       }
+                                                                       if (trimmedAmenity.ToLower().Contains("parking"))
+                                                                       {
+                                                                           <span class="amenity-badge"><i class="fas fa-parking"></i> Parking</span>
+                                                                       }
+                                                                       if (trimmedAmenity.ToLower().Contains("gym") || trimmedAmenity.ToLower().Contains("fitness"))
+                                                                       {
+                                                                           <span class="amenity-badge"><i class="fas fa-dumbbell"></i> Gym</span>
+                                                                       }
+                                                                       if (trimmedAmenity.ToLower().Contains("pool") || trimmedAmenity.ToLower().Contains("swimming"))
+                                                                       {
+                                                                           <span class="amenity-badge"><i class="fas fa-swimming-pool"></i> Pool</span>
+                                                                       }
+                                                                       if (trimmedAmenity.ToLower().Contains("bath") || trimmedAmenity.ToLower().Contains("shower"))
+                                                                       {
+                                                                           <span class="amenity-badge"><i class="fas fa-bath"></i> Private Bath</span>
+                                                                       }
+                                                                       if (trimmedAmenity.ToLower().Contains("bar") || trimmedAmenity.ToLower().Contains("minibar"))
+                                                                       {
+                                                                           <span class="amenity-badge"><i class="fas fa-glass-martini-alt"></i> Minibar</span>
+                                                                       }
+                                                                       if (trimmedAmenity.ToLower().Contains("safe") || trimmedAmenity.ToLower().Contains("security"))
+                                                                       {
+                                                                           <span class="amenity-badge"><i class="fas fa-shield-alt"></i> Safe</span>
+                                                                       }
+                                                                   }
+                                                               }
+                                                           </div>
+                                                       }
+                            
+                            <ul class="room-info-list">
+                                <li class="room-info-item">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Max Capacity: @room.NumberOfBeds Persons</span>
+                                </li>
+                                <li class="room-info-item">
+                                    <i class="fas fa-ruler-combined"></i>
+                                    <span>Room Size: @room.SpaceByMiter m²</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="room-footer">
+                                <div class="room-price">
+                                    <span class="price-label">Rate per night</span>
+                                    <span class="price-value">SAR @room.Rate.ToString("")</span>
+                                </div>
+                                
+                                <a href="#" class="btn-book">
+                                    <i class="fas fa-calendar-check"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+</body>

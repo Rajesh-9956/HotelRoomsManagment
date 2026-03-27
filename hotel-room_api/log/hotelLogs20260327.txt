@@ -1,0 +1,6 @@
+2026-03-27 17:55:54.511 +05:30 [INF] User profile is available. Using 'C:\Users\errk9\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-27 17:55:54.800 +05:30 [INF] Now listening on: http://localhost:5244
+2026-03-27 17:55:54.801 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-27 17:55:54.802 +05:30 [INF] Hosting environment: Development
+2026-03-27 17:55:54.802 +05:30 [INF] Content root path: B:\Project\HotelRoomsManagment-main\HotelRoomsManagment-main\hotel-room_api
+2026-03-27 18:06:49.264 +05:30 [INF] Application is shutting down...

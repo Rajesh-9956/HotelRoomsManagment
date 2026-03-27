@@ -1,0 +1,12 @@
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/bin/Debug/net8.0/RoomsUtility.deps.json
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/bin/Debug/net8.0/RoomsUtility.dll
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/bin/Debug/net8.0/RoomsUtility.pdb
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/obj/Debug/net8.0/RoomsUtility.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/obj/Debug/net8.0/RoomsUtility.AssemblyInfoInputs.cache
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/obj/Debug/net8.0/RoomsUtility.AssemblyInfo.cs
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/obj/Debug/net8.0/RoomsUtility.csproj.CoreCompileInputs.cache
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/obj/Debug/net8.0/RoomsUtility.dll
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/obj/Debug/net8.0/refint/RoomsUtility.dll
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/obj/Debug/net8.0/RoomsUtility.pdb
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/obj/Debug/net8.0/ref/RoomsUtility.dll
+/Users/aymanyassien/hotel-room_solution/RoomsUtility/obj/Debug/net8.0/RoomsUtility.sourcelink.json

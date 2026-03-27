@@ -1,0 +1,97 @@
+@model RoomUpdateDTO
+
+@{
+    ViewData["Title"] = "Update Room";
+}
+
+<div class="container">
+    <div class="border">
+        <h1>Update Room</h1>
+        <form asp-action="UpdateRoom" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input hidden asp-for="Id" />
+                <div class="col-md-6">
+                    <!-- Left column fields -->
+                    <div class="mb-4">
+                        <label asp-for="Name" class="form-label fw-bold">Room Name</label>
+                        <input asp-for="Name" type="text" class="form-control" id="name" placeholder="e.g. Deluxe Ocean View" required />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Rate" class="form-label fw-bold">Rate Per Night</label>
+                        <div class="input-group">
+                            <span class="input-group-text">SAR</span>
+                            <input type="number" asp-for="Rate" class="form-control" id="rate" min="0" step="0.01" placeholder="149.99" required />
+                        </div>
+                        <span asp-validation-for="Rate" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="SpaceByMiter" class="form-label fw-bold">Room Size</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="spaceByMeter" asp-for="SpaceByMiter" min="1" placeholder="32" required />
+                            <span class="input-group-text">m²</span>
+                        </div>
+                        <span asp-validation-for="SpaceByMiter" class="text-danger"></span>
+                        <small class="form-text text-muted">Enter room size in square meters</small>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Amenity" class="form-label fw-bold">Amenities</label>
+                        <input type="text" class="form-control" id="amenity" asp-for="Amenity" placeholder="WiFi, TV, Mini-bar, Ocean View" required />
+                        <span asp-validation-for="Amenity" class="text-danger"></span>
+                        <small class="form-text text-muted">Separate multiple amenities with commas</small>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Right column fields -->
+                    <div class="mb-4">
+                        <label asp-for="NumberOfBeds" class="form-label fw-bold">Number of Beds</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="numberOfBeds" asp-for="NumberOfBeds" min="1" max="6" placeholder="2" required />
+                            <span class="input-group-text"><i class="fas fa-bed"></i></span>
+                        </div>
+                        <span asp-validation-for="NumberOfBeds" class="text-danger"></span>
+                    </div>
+
+                    <!-- Image Display and Update -->
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">Room Image</label>
+                        @if (Model.ImageUrl != null)
+                        {
+                            <div class="mb-3">
+                                <img src="@Model.ImageUrl" alt="Current Room Image" class="img-fluid" style="max-height: 150px; border-radius: var(--border-radius); box-shadow: var(--soft-shadow);" />
+                                <small class="d-block text-muted mt-1">Current image</small>
+                            </div>
+                        }
+                       <label asp-for="Image" class="form-label fw-bold">Room Image</label>
+                        <input asp-for="Image" type="file" class="form-control" id="imageUpload" accept="image/*"  />
+                        <span asp-validation-for="Image" class="text-danger"></span>
+                        <small class="form-text text-muted">Upload a new image to replace the current one (recommended: 1200×800px)</small>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label asp-for="Details" class="form-label fw-bold">Room Details</label>
+                <textarea class="form-control" id="details" asp-for="Details" rows="4" placeholder="Describe the room features, view, and other important details..." required></textarea>
+                <span asp-validation-for="Details" class="text-danger"></span>
+            </div>
+
+            <div class="d-flex mt-5">
+                <button type="submit" value="Update" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Update Room
+                </button>
+                <a asp-action="IndexRoom" asp-controller="Room" class="btn btn-outline-primary ms-3">
+                    <i class="fas fa-arrow-left"></i> Back to List
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

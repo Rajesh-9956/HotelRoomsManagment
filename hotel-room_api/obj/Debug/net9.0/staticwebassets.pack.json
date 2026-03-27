@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/hotel-room_api/wwwroot/Images/1cb45cc4-2963-4bb4-b801-46842d010e49_4.webp",
+      "PackagePath": "staticwebassets/Images/1cb45cc4-2963-4bb4-b801-46842d010e49_4.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/hotel-room_api/wwwroot/Images/Gym_breakfast.webp",
+      "PackagePath": "staticwebassets/Images/Gym_breakfast.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/hotel-room_api/wwwroot/Images/Gym_breakfast2.webp",
+      "PackagePath": "staticwebassets/Images/Gym_breakfast2.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/hotel-room_api/wwwroot/Images/HeroImage.webp",
+      "PackagePath": "staticwebassets/Images/HeroImage.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/hotel-room_api/wwwroot/Images/Luxury.webp",
+      "PackagePath": "staticwebassets/Images/Luxury.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/hotel-room_api/wwwroot/Images/Pool.webp",
+      "PackagePath": "staticwebassets/Images/Pool.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/hotel-room_api/wwwroot/Images/Wifi.webp",
+      "PackagePath": "staticwebassets/Images/Wifi.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/hotel-room_api/wwwroot/Images/a004d9bb-f9fe-428a-b69a-583a3417337d_2.webp",
+      "PackagePath": "staticwebassets/Images/a004d9bb-f9fe-428a-b69a-583a3417337d_2.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/hotel-room_api/wwwroot/Images/pool-grat.webp",
+      "PackagePath": "staticwebassets/Images/pool-grat.webp"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.hotel-room_api.props",
+      "PackagePath": "build\\hotel-room_api.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.hotel-room_api.props",
+      "PackagePath": "buildMultiTargeting\\hotel-room_api.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.hotel-room_api.props",
+      "PackagePath": "buildTransitive\\hotel-room_api.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.hotel-room_api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.hotel-room_api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

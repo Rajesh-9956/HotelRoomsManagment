@@ -1,0 +1,525 @@
+2025-06-19 00:01:45.880 +03:00 [INF] Application is shutting down...
+2025-06-19 00:06:51.282 +03:00 [INF] User profile is available. Using '/Users/aymanyassien/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-19 00:06:51.376 +03:00 [INF] Now listening on: http://localhost:5244
+2025-06-19 00:06:51.377 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-19 00:06:51.378 +03:00 [INF] Hosting environment: Development
+2025-06-19 00:06:51.378 +03:00 [INF] Content root path: /Users/aymanyassien/hotel-room_solution/hotel-room_api
+2025-06-19 00:06:51.962 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/swagger/index.html - null null
+2025-06-19 00:06:52.090 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/swagger/index.html - 200 null text/html;charset=utf-8 129.618ms
+2025-06-19 00:06:52.151 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/swagger/index.js - null null
+2025-06-19 00:06:52.157 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/swagger/index.js - 200 null application/javascript;charset=utf-8 7.1739ms
+2025-06-19 00:06:52.401 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/swagger/v1/swagger.json - null null
+2025-06-19 00:06:52.725 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 323.7882ms
+2025-06-19 00:07:09.835 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5244/api/UserAuth/Login - application/json; charset=utf-8 48
+2025-06-19 00:07:09.847 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-06-19 00:07:09.911 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.UsersController.Login (hotel-room_api)'
+2025-06-19 00:07:09.928 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] Login(hotel_room_api.Models.DTOs.InternalDTO.LoginRequestDTO) on controller hotel_room_api.Controllers.UsersController (hotel-room_api).
+2025-06-19 00:07:10.173 +03:00 [INF] Executing action method hotel_room_api.Controllers.UsersController.Login (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:07:11.941 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE LOWER([a].[UserName]) = @__ToLower_0
+2025-06-19 00:07:12.178 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-06-19 00:07:12.230 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[ExpiredAt], [r].[IsValid], [r].[JwtTokenId], [r].[Refresh_Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[UserId] = @__username_0
+2025-06-19 00:07:12.252 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[ExpiredAt], [r].[IsValid], [r].[JwtTokenId], [r].[Refresh_Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[UserId] = @__username_0
+2025-06-19 00:07:12.447 +03:00 [INF] Executed DbCommand (61ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p11='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p17='?' (DbType = Int32), @p12='?' (DbType = DateTime2), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p23='?' (DbType = Int32), @p18='?' (DbType = DateTime2), @p19='?' (DbType = Boolean), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (Size = 4000), @p29='?' (DbType = Int32), @p24='?' (DbType = DateTime2), @p25='?' (DbType = Boolean), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p35='?' (DbType = Int32), @p30='?' (DbType = DateTime2), @p31='?' (DbType = Boolean), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p41='?' (DbType = Int32), @p36='?' (DbType = DateTime2), @p37='?' (DbType = Boolean), @p38='?' (Size = 4000), @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p47='?' (DbType = Int32), @p42='?' (DbType = DateTime2), @p43='?' (DbType = Boolean), @p44='?' (Size = 4000), @p45='?' (Size = 4000), @p46='?' (Size = 4000), @p53='?' (DbType = Int32), @p48='?' (DbType = DateTime2), @p49='?' (DbType = Boolean), @p50='?' (Size = 4000), @p51='?' (Size = 4000), @p52='?' (Size = 4000), @p59='?' (DbType = Int32), @p54='?' (DbType = DateTime2), @p55='?' (DbType = Boolean), @p56='?' (Size = 4000), @p57='?' (Size = 4000), @p58='?' (Size = 4000), @p65='?' (DbType = Int32), @p60='?' (DbType = DateTime2), @p61='?' (DbType = Boolean), @p62='?' (Size = 4000), @p63='?' (Size = 4000), @p64='?' (Size = 4000), @p71='?' (DbType = Int32), @p66='?' (DbType = DateTime2), @p67='?' (DbType = Boolean), @p68='?' (Size = 4000), @p69='?' (Size = 4000), @p70='?' (Size = 4000), @p77='?' (DbType = Int32), @p72='?' (DbType = DateTime2), @p73='?' (DbType = Boolean), @p74='?' (Size = 4000), @p75='?' (Size = 4000), @p76='?' (Size = 4000), @p83='?' (DbType = Int32), @p78='?' (DbType = DateTime2), @p79='?' (DbType = Boolean), @p80='?' (Size = 4000), @p81='?' (Size = 4000), @p82='?' (Size = 4000), @p89='?' (DbType = Int32), @p84='?' (DbType = DateTime2), @p85='?' (DbType = Boolean), @p86='?' (Size = 4000), @p87='?' (Size = 4000), @p88='?' (Size = 4000), @p95='?' (DbType = Int32), @p90='?' (DbType = DateTime2), @p91='?' (DbType = Boolean), @p92='?' (Size = 4000), @p93='?' (Size = 4000), @p94='?' (Size = 4000), @p101='?' (DbType = Int32), @p96='?' (DbType = DateTime2), @p97='?' (DbType = Boolean), @p98='?' (Size = 4000), @p99='?' (Size = 4000), @p100='?' (Size = 4000), @p107='?' (DbType = Int32), @p102='?' (DbType = DateTime2), @p103='?' (DbType = Boolean), @p104='?' (Size = 4000), @p105='?' (Size = 4000), @p106='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p0, [IsValid] = @p1, [JwtTokenId] = @p2, [Refresh_Token] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p6, [IsValid] = @p7, [JwtTokenId] = @p8, [Refresh_Token] = @p9, [UserId] = @p10
+OUTPUT 1
+WHERE [Id] = @p11;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p12, [IsValid] = @p13, [JwtTokenId] = @p14, [Refresh_Token] = @p15, [UserId] = @p16
+OUTPUT 1
+WHERE [Id] = @p17;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p18, [IsValid] = @p19, [JwtTokenId] = @p20, [Refresh_Token] = @p21, [UserId] = @p22
+OUTPUT 1
+WHERE [Id] = @p23;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p24, [IsValid] = @p25, [JwtTokenId] = @p26, [Refresh_Token] = @p27, [UserId] = @p28
+OUTPUT 1
+WHERE [Id] = @p29;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p30, [IsValid] = @p31, [JwtTokenId] = @p32, [Refresh_Token] = @p33, [UserId] = @p34
+OUTPUT 1
+WHERE [Id] = @p35;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p36, [IsValid] = @p37, [JwtTokenId] = @p38, [Refresh_Token] = @p39, [UserId] = @p40
+OUTPUT 1
+WHERE [Id] = @p41;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p42, [IsValid] = @p43, [JwtTokenId] = @p44, [Refresh_Token] = @p45, [UserId] = @p46
+OUTPUT 1
+WHERE [Id] = @p47;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p48, [IsValid] = @p49, [JwtTokenId] = @p50, [Refresh_Token] = @p51, [UserId] = @p52
+OUTPUT 1
+WHERE [Id] = @p53;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p54, [IsValid] = @p55, [JwtTokenId] = @p56, [Refresh_Token] = @p57, [UserId] = @p58
+OUTPUT 1
+WHERE [Id] = @p59;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p60, [IsValid] = @p61, [JwtTokenId] = @p62, [Refresh_Token] = @p63, [UserId] = @p64
+OUTPUT 1
+WHERE [Id] = @p65;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p66, [IsValid] = @p67, [JwtTokenId] = @p68, [Refresh_Token] = @p69, [UserId] = @p70
+OUTPUT 1
+WHERE [Id] = @p71;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p72, [IsValid] = @p73, [JwtTokenId] = @p74, [Refresh_Token] = @p75, [UserId] = @p76
+OUTPUT 1
+WHERE [Id] = @p77;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p78, [IsValid] = @p79, [JwtTokenId] = @p80, [Refresh_Token] = @p81, [UserId] = @p82
+OUTPUT 1
+WHERE [Id] = @p83;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p84, [IsValid] = @p85, [JwtTokenId] = @p86, [Refresh_Token] = @p87, [UserId] = @p88
+OUTPUT 1
+WHERE [Id] = @p89;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p90, [IsValid] = @p91, [JwtTokenId] = @p92, [Refresh_Token] = @p93, [UserId] = @p94
+OUTPUT 1
+WHERE [Id] = @p95;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p96, [IsValid] = @p97, [JwtTokenId] = @p98, [Refresh_Token] = @p99, [UserId] = @p100
+OUTPUT 1
+WHERE [Id] = @p101;
+UPDATE [RefreshTokens] SET [ExpiredAt] = @p102, [IsValid] = @p103, [JwtTokenId] = @p104, [Refresh_Token] = @p105, [UserId] = @p106
+OUTPUT 1
+WHERE [Id] = @p107;
+2025-06-19 00:07:12.544 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([ExpiredAt], [IsValid], [JwtTokenId], [Refresh_Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-06-19 00:07:12.569 +03:00 [INF] Executed action method hotel_room_api.Controllers.UsersController.Login (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2390.5126ms.
+2025-06-19 00:07:12.583 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:07:12.677 +03:00 [INF] Executed action hotel_room_api.Controllers.UsersController.Login (hotel-room_api) in 2744.1414ms
+2025-06-19 00:07:12.678 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.UsersController.Login (hotel-room_api)'
+2025-06-19 00:07:12.702 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5244/api/UserAuth/Login - 200 520 application/json; charset=utf-8 2867.323ms
+2025-06-19 00:07:12.904 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi - null null
+2025-06-19 00:07:12.981 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:07:12.985 +03:00 [INF] Route matched with {action = "GetRooms", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRooms(Int32, Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:07:13.097 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:07:13.098 +03:00 [INF] Get All Rooms :)
+2025-06-19 00:07:13.111 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+2025-06-19 00:07:13.142 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 44.2522ms.
+2025-06-19 00:07:13.142 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:07:13.151 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) in 165.7196ms
+2025-06-19 00:07:13.151 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:07:13.151 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi - 200 1601 application/json; charset=utf-8 247.1481ms
+2025-06-19 00:07:18.949 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi - null null
+2025-06-19 00:07:18.959 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:07:18.960 +03:00 [INF] Route matched with {action = "GetRooms", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRooms(Int32, Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:07:19.031 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:07:19.031 +03:00 [INF] Get All Rooms :)
+2025-06-19 00:07:19.047 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+2025-06-19 00:07:19.049 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 18.065ms.
+2025-06-19 00:07:19.049 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:07:19.050 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) in 90.5695ms
+2025-06-19 00:07:19.050 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:07:19.050 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi - 200 1601 application/json; charset=utf-8 101.7112ms
+2025-06-19 00:07:53.698 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5244/api/RoomApi - multipart/form-data; boundary="5832d4aa-bfcc-49d1-882b-a3c0f1d5a54b" 273631
+2025-06-19 00:07:53.705 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.AddNewRoom (hotel-room_api)'
+2025-06-19 00:07:53.725 +03:00 [INF] Route matched with {action = "AddNewRoom", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] AddNewRoom(hotel_room_api.Models.DTOs.RoomCreateDTO) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:07:53.781 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.AddNewRoom (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:07:53.867 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[@__roomDto_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+WHERE [r].[Name] = @__roomDto_Name_0
+2025-06-19 00:07:53.942 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Rooms] ([Amenity], [Details], [ImageLocalPath], [ImageUrl], [Name], [NumberOfBeds], [Rate], [SpaceByMiter], [createdDate], [updatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-06-19 00:07:53.983 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Rooms] SET [Amenity] = @p0, [Details] = @p1, [ImageLocalPath] = @p2, [ImageUrl] = @p3, [Name] = @p4, [NumberOfBeds] = @p5, [Rate] = @p6, [SpaceByMiter] = @p7, [createdDate] = @p8, [updatedDate] = @p9
+OUTPUT 1
+WHERE [Id] = @p10;
+2025-06-19 00:07:53.991 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.AddNewRoom (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 209.3195ms.
+2025-06-19 00:07:53.992 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:07:54.082 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.AddNewRoom (hotel-room_api) in 356.8459ms
+2025-06-19 00:07:54.082 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.AddNewRoom (hotel-room_api)'
+2025-06-19 00:07:54.083 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5244/api/RoomApi - 201 310 application/json; charset=utf-8 385.9087ms
+2025-06-19 00:07:54.097 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi - null null
+2025-06-19 00:07:54.098 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:07:54.098 +03:00 [INF] Route matched with {action = "GetRooms", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRooms(Int32, Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:07:54.100 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:07:54.100 +03:00 [INF] Get All Rooms :)
+2025-06-19 00:07:54.108 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+2025-06-19 00:07:54.109 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.599ms.
+2025-06-19 00:07:54.109 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:07:54.110 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) in 11.243ms
+2025-06-19 00:07:54.110 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:07:54.110 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi - 200 1907 application/json; charset=utf-8 12.932ms
+2025-06-19 00:07:56.160 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi - null null
+2025-06-19 00:07:56.166 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:07:56.166 +03:00 [INF] Route matched with {action = "GetRooms", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRooms(Int32, Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:07:56.168 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:07:56.168 +03:00 [INF] Get All Rooms :)
+2025-06-19 00:07:56.175 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+2025-06-19 00:07:56.176 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.2415ms.
+2025-06-19 00:07:56.176 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:07:56.176 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) in 10.2181ms
+2025-06-19 00:07:56.176 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:07:56.176 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi - 200 1907 application/json; charset=utf-8 16.1738ms
+2025-06-19 00:07:56.218 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/images/27498534-7191-4866-9274-52487e227105_1020.webp - null null
+2025-06-19 00:07:56.268 +03:00 [INF] Sending file. Request path: '/images/27498534-7191-4866-9274-52487e227105_1020.webp'. Physical path: '/Users/aymanyassien/hotel-room_solution/hotel-room_api/wwwroot/images/27498534-7191-4866-9274-52487e227105_1020.webp'
+2025-06-19 00:07:56.268 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/images/27498534-7191-4866-9274-52487e227105_1020.webp - 200 272458 image/webp 49.6942ms
+2025-06-19 00:08:00.885 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi - null null
+2025-06-19 00:08:00.889 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:00.894 +03:00 [INF] Route matched with {action = "GetRooms", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRooms(Int32, Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:08:00.901 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:00.901 +03:00 [INF] Get All Rooms :)
+2025-06-19 00:08:00.918 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+2025-06-19 00:08:00.923 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22.252ms.
+2025-06-19 00:08:00.924 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:00.925 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) in 30.294ms
+2025-06-19 00:08:00.925 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:00.925 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi - 200 1907 application/json; charset=utf-8 40.4533ms
+2025-06-19 00:08:02.372 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi/1020 - null null
+2025-06-19 00:08:02.377 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRoomById (hotel-room_api)'
+2025-06-19 00:08:02.390 +03:00 [INF] Route matched with {action = "GetRoomById", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRoomById(Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:08:02.392 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRoomById (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:02.414 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-06-19 00:08:02.417 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRoomById (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.8392ms.
+2025-06-19 00:08:02.417 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:02.417 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRoomById (hotel-room_api) in 27.2685ms
+2025-06-19 00:08:02.417 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRoomById (hotel-room_api)'
+2025-06-19 00:08:02.417 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi/1020 - 200 371 application/json; charset=utf-8 44.8169ms
+2025-06-19 00:08:02.490 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/images/27498534-7191-4866-9274-52487e227105_1020.webp - null null
+2025-06-19 00:08:02.493 +03:00 [INF] The file /images/27498534-7191-4866-9274-52487e227105_1020.webp was not modified
+2025-06-19 00:08:02.494 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/images/27498534-7191-4866-9274-52487e227105_1020.webp - 304 null image/webp 3.8973ms
+2025-06-19 00:08:10.842 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5244/api/RoomApi/1020 - multipart/form-data; boundary="1350db64-77b0-43be-88bc-723211ce57b1" 1416
+2025-06-19 00:08:10.843 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.UpdateRoom (hotel-room_api)'
+2025-06-19 00:08:10.849 +03:00 [INF] Route matched with {action = "UpdateRoom", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] UpdateRoom(Int32, hotel_room_api.Models.DTOs.RoomUpdateDTO) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:08:10.862 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.UpdateRoom (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:10.891 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-06-19 00:08:10.912 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Rooms] SET [Amenity] = @p0, [Details] = @p1, [ImageLocalPath] = @p2, [ImageUrl] = @p3, [Name] = @p4, [NumberOfBeds] = @p5, [Rate] = @p6, [SpaceByMiter] = @p7, [createdDate] = @p8, [updatedDate] = @p9
+OUTPUT 1
+WHERE [Id] = @p10;
+2025-06-19 00:08:10.913 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.UpdateRoom (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 50.8507ms.
+2025-06-19 00:08:10.914 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:10.914 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.UpdateRoom (hotel-room_api) in 65.4575ms
+2025-06-19 00:08:10.914 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.UpdateRoom (hotel-room_api)'
+2025-06-19 00:08:10.915 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5244/api/RoomApi/1020 - 200 70 application/json; charset=utf-8 72.33ms
+2025-06-19 00:08:10.926 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi - null null
+2025-06-19 00:08:10.926 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:10.926 +03:00 [INF] Route matched with {action = "GetRooms", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRooms(Int32, Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:08:10.927 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:10.927 +03:00 [INF] Get All Rooms :)
+2025-06-19 00:08:10.931 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+2025-06-19 00:08:10.931 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.4238ms.
+2025-06-19 00:08:10.932 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:10.932 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) in 5.6272ms
+2025-06-19 00:08:10.932 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:10.932 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi - 200 1782 application/json; charset=utf-8 6.333ms
+2025-06-19 00:08:16.092 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi/1020 - null null
+2025-06-19 00:08:16.093 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRoomById (hotel-room_api)'
+2025-06-19 00:08:16.093 +03:00 [INF] Route matched with {action = "GetRoomById", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRoomById(Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:08:16.096 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRoomById (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:16.106 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-06-19 00:08:16.106 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRoomById (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.4919ms.
+2025-06-19 00:08:16.106 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:16.107 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRoomById (hotel-room_api) in 13.109ms
+2025-06-19 00:08:16.107 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRoomById (hotel-room_api)'
+2025-06-19 00:08:16.107 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi/1020 - 200 246 application/json; charset=utf-8 14.601ms
+2025-06-19 00:08:19.212 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5244/api/RoomApi/1020 - null null
+2025-06-19 00:08:19.214 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.DeleteRoom (hotel-room_api)'
+2025-06-19 00:08:19.219 +03:00 [INF] Route matched with {action = "DeleteRoom", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] DeleteRoom(Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:08:19.226 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.DeleteRoom (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:19.246 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-06-19 00:08:19.283 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Rooms]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-06-19 00:08:19.286 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.DeleteRoom (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 59.7852ms.
+2025-06-19 00:08:19.286 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:19.287 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.DeleteRoom (hotel-room_api) in 67.3066ms
+2025-06-19 00:08:19.287 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.DeleteRoom (hotel-room_api)'
+2025-06-19 00:08:19.287 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5244/api/RoomApi/1020 - 200 70 application/json; charset=utf-8 75.0605ms
+2025-06-19 00:08:19.293 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi - null null
+2025-06-19 00:08:19.293 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:19.293 +03:00 [INF] Route matched with {action = "GetRooms", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRooms(Int32, Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:08:19.294 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:19.294 +03:00 [INF] Get All Rooms :)
+2025-06-19 00:08:19.297 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+2025-06-19 00:08:19.298 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.4576ms.
+2025-06-19 00:08:19.298 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:19.298 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) in 4.5272ms
+2025-06-19 00:08:19.298 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:19.298 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi - 200 1601 application/json; charset=utf-8 5.1895ms
+2025-06-19 00:08:24.728 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/bedNumber - null null
+2025-06-19 00:08:24.729 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api)'
+2025-06-19 00:08:24.736 +03:00 [INF] Route matched with {action = "GetBedNumbers", controller = "BedNumberApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetBedNumbers() on controller hotel_room_api.Controllers.BedNumberApi (hotel-room_api).
+2025-06-19 00:08:24.739 +03:00 [INF] Executing action method hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:24.777 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-19 00:08:24.778 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-19 00:08:24.829 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b0].[bedNo], [b0].[CreatedDate], [b0].[RoomId], [b0].[UpdatedDate], [b0].[specialDetails], [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM (
+    SELECT [b].[bedNo], [b].[CreatedDate], [b].[RoomId], [b].[UpdatedDate], [b].[specialDetails]
+    FROM [BedNumbers] AS [b]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [b0]
+INNER JOIN [Rooms] AS [r] ON [b0].[RoomId] = [r].[Id]
+2025-06-19 00:08:24.850 +03:00 [INF] Executed action method hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 111.2495ms.
+2025-06-19 00:08:24.850 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:24.860 +03:00 [INF] Executed action hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api) in 124.5227ms
+2025-06-19 00:08:24.860 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api)'
+2025-06-19 00:08:24.861 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/bedNumber - 200 1114 application/json; charset=utf-8 132.6575ms
+2025-06-19 00:08:25.674 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi - null null
+2025-06-19 00:08:25.676 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:25.676 +03:00 [INF] Route matched with {action = "GetRooms", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRooms(Int32, Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:08:25.678 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:25.678 +03:00 [INF] Get All Rooms :)
+2025-06-19 00:08:25.689 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+2025-06-19 00:08:25.690 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.4662ms.
+2025-06-19 00:08:25.691 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:25.691 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) in 15.3395ms
+2025-06-19 00:08:25.691 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:25.691 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi - 200 1601 application/json; charset=utf-8 17.1911ms
+2025-06-19 00:08:31.863 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5244/api/bedNumber - application/json; charset=utf-8 46
+2025-06-19 00:08:31.864 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.BedNumberApi.addNewBedNumber (hotel-room_api)'
+2025-06-19 00:08:31.876 +03:00 [INF] Route matched with {action = "addNewBedNumber", controller = "BedNumberApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] addNewBedNumber(hotel_room_api.Models.DTOs.RoomNumberDTO.BedNumberAddDTO) on controller hotel_room_api.Controllers.BedNumberApi (hotel-room_api).
+2025-06-19 00:08:31.900 +03:00 [INF] Executing action method hotel_room_api.Controllers.BedNumberApi.addNewBedNumber (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:31.927 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__newDTO_bedNo_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[bedNo], [b].[CreatedDate], [b].[RoomId], [b].[UpdatedDate], [b].[specialDetails]
+FROM [BedNumbers] AS [b]
+WHERE [b].[bedNo] = @__newDTO_bedNo_0
+2025-06-19 00:08:31.938 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__newDTO_RoomId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+WHERE [r].[Id] = @__newDTO_RoomId_0
+2025-06-19 00:08:31.959 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Date), @p2='?' (DbType = Int32), @p3='?' (DbType = Date), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [BedNumbers] ([bedNo], [CreatedDate], [RoomId], [UpdatedDate], [specialDetails])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-06-19 00:08:31.960 +03:00 [INF] Executed action method hotel_room_api.Controllers.BedNumberApi.addNewBedNumber (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 59.3854ms.
+2025-06-19 00:08:31.960 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:31.962 +03:00 [INF] Executed action hotel_room_api.Controllers.BedNumberApi.addNewBedNumber (hotel-room_api) in 84.9813ms
+2025-06-19 00:08:31.962 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.BedNumberApi.addNewBedNumber (hotel-room_api)'
+2025-06-19 00:08:31.962 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5244/api/bedNumber - 201 112 application/json; charset=utf-8 98.9422ms
+2025-06-19 00:08:31.969 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/bedNumber - null null
+2025-06-19 00:08:31.969 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api)'
+2025-06-19 00:08:31.969 +03:00 [INF] Route matched with {action = "GetBedNumbers", controller = "BedNumberApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetBedNumbers() on controller hotel_room_api.Controllers.BedNumberApi (hotel-room_api).
+2025-06-19 00:08:31.971 +03:00 [INF] Executing action method hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:31.975 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b0].[bedNo], [b0].[CreatedDate], [b0].[RoomId], [b0].[UpdatedDate], [b0].[specialDetails], [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM (
+    SELECT [b].[bedNo], [b].[CreatedDate], [b].[RoomId], [b].[UpdatedDate], [b].[specialDetails]
+    FROM [BedNumbers] AS [b]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [b0]
+INNER JOIN [Rooms] AS [r] ON [b0].[RoomId] = [r].[Id]
+2025-06-19 00:08:31.976 +03:00 [INF] Executed action method hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.7149ms.
+2025-06-19 00:08:31.976 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:31.976 +03:00 [INF] Executed action hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api) in 6.677ms
+2025-06-19 00:08:31.976 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api)'
+2025-06-19 00:08:31.976 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/bedNumber - 200 1695 application/json; charset=utf-8 7.5581ms
+2025-06-19 00:08:34.452 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/bedNumber/398 - null null
+2025-06-19 00:08:34.458 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api)'
+2025-06-19 00:08:34.463 +03:00 [INF] Route matched with {action = "GetBedNumberById", controller = "BedNumberApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetBedNumberById(Int32) on controller hotel_room_api.Controllers.BedNumberApi (hotel-room_api).
+2025-06-19 00:08:34.466 +03:00 [INF] Executing action method hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:34.505 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[bedNo], [b].[CreatedDate], [b].[RoomId], [b].[UpdatedDate], [b].[specialDetails], [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [BedNumbers] AS [b]
+INNER JOIN [Rooms] AS [r] ON [b].[RoomId] = [r].[Id]
+WHERE [b].[bedNo] = @__id_0
+2025-06-19 00:08:34.511 +03:00 [INF] Executed action method hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 45.2506ms.
+2025-06-19 00:08:34.511 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:34.514 +03:00 [INF] Executed action hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api) in 51.1981ms
+2025-06-19 00:08:34.514 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api)'
+2025-06-19 00:08:34.514 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/bedNumber/398 - 200 464 application/json; charset=utf-8 62.4514ms
+2025-06-19 00:08:34.516 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi - null null
+2025-06-19 00:08:34.516 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:34.516 +03:00 [INF] Route matched with {action = "GetRooms", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRooms(Int32, Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:08:34.518 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:34.518 +03:00 [INF] Get All Rooms :)
+2025-06-19 00:08:34.523 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+2025-06-19 00:08:34.524 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.8125ms.
+2025-06-19 00:08:34.524 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:34.524 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) in 7.6771ms
+2025-06-19 00:08:34.524 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:34.524 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi - 200 1601 application/json; charset=utf-8 8.4055ms
+2025-06-19 00:08:36.874 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/bedNumber/398 - null null
+2025-06-19 00:08:36.875 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api)'
+2025-06-19 00:08:36.875 +03:00 [INF] Route matched with {action = "GetBedNumberById", controller = "BedNumberApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetBedNumberById(Int32) on controller hotel_room_api.Controllers.BedNumberApi (hotel-room_api).
+2025-06-19 00:08:36.877 +03:00 [INF] Executing action method hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:36.887 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[bedNo], [b].[CreatedDate], [b].[RoomId], [b].[UpdatedDate], [b].[specialDetails], [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [BedNumbers] AS [b]
+INNER JOIN [Rooms] AS [r] ON [b].[RoomId] = [r].[Id]
+WHERE [b].[bedNo] = @__id_0
+2025-06-19 00:08:36.887 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5244/api/bedNumber/398 - application/json; charset=utf-8 47
+2025-06-19 00:08:36.888 +03:00 [INF] Executed action method hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.9275ms.
+2025-06-19 00:08:36.888 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:36.888 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.BedNumberApi.UpdateBedNumber (hotel-room_api)'
+2025-06-19 00:08:36.888 +03:00 [INF] Executed action hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api) in 12.9171ms
+2025-06-19 00:08:36.888 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api)'
+2025-06-19 00:08:36.888 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/bedNumber/398 - 200 464 application/json; charset=utf-8 14.2401ms
+2025-06-19 00:08:36.894 +03:00 [INF] Route matched with {action = "UpdateBedNumber", controller = "BedNumberApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] UpdateBedNumber(Int32, hotel_room_api.Models.DTOs.RoomNumberDTO.BedNumberUpdateDTO) on controller hotel_room_api.Controllers.BedNumberApi (hotel-room_api).
+2025-06-19 00:08:36.899 +03:00 [INF] Executing action method hotel_room_api.Controllers.BedNumberApi.UpdateBedNumber (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:36.915 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[bedNo], [b].[CreatedDate], [b].[RoomId], [b].[UpdatedDate], [b].[specialDetails]
+FROM [BedNumbers] AS [b]
+WHERE [b].[bedNo] = @__id_0
+2025-06-19 00:08:36.926 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__bedNumberUpdateDto_RoomId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+WHERE [r].[Id] = @__bedNumberUpdateDto_RoomId_0
+2025-06-19 00:08:36.942 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = Date), @p1='?' (DbType = Int32), @p2='?' (DbType = Date), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [BedNumbers] SET [CreatedDate] = @p0, [RoomId] = @p1, [UpdatedDate] = @p2, [specialDetails] = @p3
+OUTPUT 1
+WHERE [bedNo] = @p4;
+2025-06-19 00:08:36.943 +03:00 [INF] Executed action method hotel_room_api.Controllers.BedNumberApi.UpdateBedNumber (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 43.561ms.
+2025-06-19 00:08:36.943 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:36.943 +03:00 [INF] Executed action hotel_room_api.Controllers.BedNumberApi.UpdateBedNumber (hotel-room_api) in 48.817ms
+2025-06-19 00:08:36.943 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.BedNumberApi.UpdateBedNumber (hotel-room_api)'
+2025-06-19 00:08:36.943 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5244/api/bedNumber/398 - 200 70 application/json; charset=utf-8 55.6621ms
+2025-06-19 00:08:36.947 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/bedNumber - null null
+2025-06-19 00:08:36.948 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api)'
+2025-06-19 00:08:36.948 +03:00 [INF] Route matched with {action = "GetBedNumbers", controller = "BedNumberApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetBedNumbers() on controller hotel_room_api.Controllers.BedNumberApi (hotel-room_api).
+2025-06-19 00:08:36.948 +03:00 [INF] Executing action method hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:36.953 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b0].[bedNo], [b0].[CreatedDate], [b0].[RoomId], [b0].[UpdatedDate], [b0].[specialDetails], [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM (
+    SELECT [b].[bedNo], [b].[CreatedDate], [b].[RoomId], [b].[UpdatedDate], [b].[specialDetails]
+    FROM [BedNumbers] AS [b]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [b0]
+INNER JOIN [Rooms] AS [r] ON [b0].[RoomId] = [r].[Id]
+2025-06-19 00:08:36.954 +03:00 [INF] Executed action method hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.3732ms.
+2025-06-19 00:08:36.954 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:36.954 +03:00 [INF] Executed action hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api) in 6.8241ms
+2025-06-19 00:08:36.955 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api)'
+2025-06-19 00:08:36.955 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/bedNumber - 200 1491 application/json; charset=utf-8 7.5706ms
+2025-06-19 00:08:39.998 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/RoomApi - null null
+2025-06-19 00:08:40.001 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:40.002 +03:00 [INF] Route matched with {action = "GetRooms", controller = "RoomApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetRooms(Int32, Int32) on controller hotel_room_api.Controllers.RoomApiController (hotel-room_api).
+2025-06-19 00:08:40.005 +03:00 [INF] Executing action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:40.005 +03:00 [INF] Get All Rooms :)
+2025-06-19 00:08:40.011 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [Rooms] AS [r]
+2025-06-19 00:08:40.012 +03:00 [INF] Executed action method hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.431ms.
+2025-06-19 00:08:40.014 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:40.016 +03:00 [INF] Executed action hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api) in 13.9346ms
+2025-06-19 00:08:40.016 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.RoomApiController.GetRooms (hotel-room_api)'
+2025-06-19 00:08:40.017 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/RoomApi - 200 1601 application/json; charset=utf-8 18.2721ms
+2025-06-19 00:08:40.020 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/bedNumber/398 - null null
+2025-06-19 00:08:40.021 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api)'
+2025-06-19 00:08:40.021 +03:00 [INF] Route matched with {action = "GetBedNumberById", controller = "BedNumberApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetBedNumberById(Int32) on controller hotel_room_api.Controllers.BedNumberApi (hotel-room_api).
+2025-06-19 00:08:40.024 +03:00 [INF] Executing action method hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:40.032 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[bedNo], [b].[CreatedDate], [b].[RoomId], [b].[UpdatedDate], [b].[specialDetails], [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM [BedNumbers] AS [b]
+INNER JOIN [Rooms] AS [r] ON [b].[RoomId] = [r].[Id]
+WHERE [b].[bedNo] = @__id_0
+2025-06-19 00:08:40.033 +03:00 [INF] Executed action method hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.9762ms.
+2025-06-19 00:08:40.034 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:40.034 +03:00 [INF] Executed action hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api) in 13.2207ms
+2025-06-19 00:08:40.034 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumberById (hotel-room_api)'
+2025-06-19 00:08:40.034 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/bedNumber/398 - 200 316 application/json; charset=utf-8 14.4339ms
+2025-06-19 00:08:40.942 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5244/api/bedNumber/398 - null null
+2025-06-19 00:08:40.944 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.BedNumberApi.DeleteBedNumber (hotel-room_api)'
+2025-06-19 00:08:40.951 +03:00 [INF] Route matched with {action = "DeleteBedNumber", controller = "BedNumberApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] DeleteBedNumber(Int32) on controller hotel_room_api.Controllers.BedNumberApi (hotel-room_api).
+2025-06-19 00:08:40.953 +03:00 [INF] Executing action method hotel_room_api.Controllers.BedNumberApi.DeleteBedNumber (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:40.965 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[bedNo], [b].[CreatedDate], [b].[RoomId], [b].[UpdatedDate], [b].[specialDetails]
+FROM [BedNumbers] AS [b]
+WHERE [b].[bedNo] = @__id_0
+2025-06-19 00:08:40.976 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [BedNumbers]
+OUTPUT 1
+WHERE [bedNo] = @p0;
+2025-06-19 00:08:40.977 +03:00 [INF] Executed action method hotel_room_api.Controllers.BedNumberApi.DeleteBedNumber (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.3498ms.
+2025-06-19 00:08:40.977 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:40.977 +03:00 [INF] Executed action hotel_room_api.Controllers.BedNumberApi.DeleteBedNumber (hotel-room_api) in 26.1108ms
+2025-06-19 00:08:40.977 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.BedNumberApi.DeleteBedNumber (hotel-room_api)'
+2025-06-19 00:08:40.977 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5244/api/bedNumber/398 - 200 70 application/json; charset=utf-8 34.8861ms
+2025-06-19 00:08:40.983 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/api/bedNumber - null null
+2025-06-19 00:08:40.984 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api)'
+2025-06-19 00:08:40.984 +03:00 [INF] Route matched with {action = "GetBedNumbers", controller = "BedNumberApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] GetBedNumbers() on controller hotel_room_api.Controllers.BedNumberApi (hotel-room_api).
+2025-06-19 00:08:40.985 +03:00 [INF] Executing action method hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:41.001 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b0].[bedNo], [b0].[CreatedDate], [b0].[RoomId], [b0].[UpdatedDate], [b0].[specialDetails], [r].[Id], [r].[Amenity], [r].[Details], [r].[ImageLocalPath], [r].[ImageUrl], [r].[Name], [r].[NumberOfBeds], [r].[Rate], [r].[SpaceByMiter], [r].[createdDate], [r].[updatedDate]
+FROM (
+    SELECT [b].[bedNo], [b].[CreatedDate], [b].[RoomId], [b].[UpdatedDate], [b].[specialDetails]
+    FROM [BedNumbers] AS [b]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [b0]
+INNER JOIN [Rooms] AS [r] ON [b0].[RoomId] = [r].[Id]
+2025-06-19 00:08:41.002 +03:00 [INF] Executed action method hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.6662ms.
+2025-06-19 00:08:41.002 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:41.003 +03:00 [INF] Executed action hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api) in 18.7459ms
+2025-06-19 00:08:41.003 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.BedNumberApi.GetBedNumbers (hotel-room_api)'
+2025-06-19 00:08:41.003 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/api/bedNumber - 200 1114 application/json; charset=utf-8 19.8469ms
+2025-06-19 00:08:43.261 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5244/api/UserAuth/revoke - application/json; charset=utf-8 454
+2025-06-19 00:08:43.263 +03:00 [INF] Executing endpoint 'hotel_room_api.Controllers.UsersController.RevokeRefreshToken (hotel-room_api)'
+2025-06-19 00:08:43.270 +03:00 [INF] Route matched with {action = "RevokeRefreshToken", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[hotel_room_api.Models.APIResponse]] RevokeRefreshToken(hotel_room_api.Models.DTOs.TokenDTO) on controller hotel_room_api.Controllers.UsersController (hotel-room_api).
+2025-06-19 00:08:43.278 +03:00 [INF] Executing action method hotel_room_api.Controllers.UsersController.RevokeRefreshToken (hotel-room_api) - Validation state: "Valid"
+2025-06-19 00:08:43.305 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__TokenDto_RefreshAccessToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ExpiredAt], [r].[IsValid], [r].[JwtTokenId], [r].[Refresh_Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Refresh_Token] = @__TokenDto_RefreshAccessToken_0
+2025-06-19 00:08:43.362 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (Size = 4000), @__tokenId_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+UPDATE [r]
+SET [r].[IsValid] = CAST(0 AS bit)
+FROM [RefreshTokens] AS [r]
+WHERE [r].[UserId] = @__userId_0 AND [r].[JwtTokenId] = @__tokenId_1
+2025-06-19 00:08:43.363 +03:00 [INF] Executed action method hotel_room_api.Controllers.UsersController.RevokeRefreshToken (hotel-room_api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 85.0307ms.
+2025-06-19 00:08:43.363 +03:00 [INF] Executing OkObjectResult, writing value of type 'hotel_room_api.Models.APIResponse'.
+2025-06-19 00:08:43.363 +03:00 [INF] Executed action hotel_room_api.Controllers.UsersController.RevokeRefreshToken (hotel-room_api) in 93.4839ms
+2025-06-19 00:08:43.363 +03:00 [INF] Executed endpoint 'hotel_room_api.Controllers.UsersController.RevokeRefreshToken (hotel-room_api)'
+2025-06-19 00:08:43.363 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5244/api/UserAuth/revoke - 200 70 application/json; charset=utf-8 102.493ms
+2025-06-19 00:08:59.436 +03:00 [INF] Application is shutting down...

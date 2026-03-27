@@ -1,0 +1,85 @@
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+@if (TempData["success"] != null)
+{
+    <script type="text/javascript">
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            text: '@TempData["success"]',
+            showConfirmButton: false,
+            timer: 3500,
+            timerProgressBar: true,
+            padding: '0.75rem',
+            width: '18rem',
+            background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)',
+            color: '#f8fafc',
+            customClass: {
+                popup: 'custom-swal-popup',
+                timerProgressBar: 'custom-swal-progress',
+                icon: 'custom-swal-icon'
+            },
+            didOpen: () => {
+                const popup = document.querySelector('.custom-swal-popup');
+                popup.style.borderRadius = '12px';
+                popup.style.boxShadow = '0 10px 15px -3px rgba(30, 58, 138, 0.3)';
+                popup.style.transform = 'translateY(-10px)';
+                const progress = document.querySelector('.custom-swal-progress');
+                progress.style.backgroundColor = '#f59e0b';
+                progress.style.height = '3px';
+                const icon = document.querySelector('.custom-swal-icon');
+                icon.style.border = '2px solid #f8fafc';
+            },
+            iconColor: '#f59e0b',
+            animation: true,
+            showClass: {
+                popup: 'animate__animated animate__zoomIn' 
+            },
+            hideClass: {
+                popup: 'animate__animated animate__zoomOut' 
+            }
+        })
+    </script>
+}
+
+@if (TempData["error"] != null)
+{
+    <script type="text/javascript">
+        Swal.fire({
+            position: 'top-end',
+            icon: 'error',
+            text: '@TempData["error"]',
+            showConfirmButton: false,
+            timer: 2500,
+            timerProgressBar: true,
+            padding: '0.75rem',
+            width: '18rem',
+            background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)',
+            color: '#f8fafc',
+            customClass: {
+                popup: 'custom-swal-popup',
+                timerProgressBar: 'custom-swal-progress',
+                icon: 'custom-swal-icon'
+            },
+            didOpen: () => {
+                const popup = document.querySelector('.custom-swal-popup');
+                popup.style.borderRadius = '12px';
+                popup.style.boxShadow = '0 10px 15px -3px rgba(30, 58, 138, 0.3)';
+                popup.style.transform = 'translateY(-10px)';
+                const progress = document.querySelector('.custom-swal-progress');
+                progress.style.backgroundColor = '#f59e0b';
+                progress.style.height = '3px';
+                const icon = document.querySelector('.custom-swal-icon');
+                icon.style.border = '2px solid #f8fafc';
+            },
+            iconColor: '#ef4444',
+            animation: true,
+            showClass: {
+                popup: 'animate__animated animate__zoomIn' 
+            },
+            hideClass: {
+                popup: 'animate__animated animate__zoomOut' 
+            }
+        })
+    </script>
+}

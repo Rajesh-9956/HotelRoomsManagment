@@ -1,0 +1,353 @@
+:root {
+    /* Main color palette */
+    --primary: #1e3a8a;           
+    --primary-light: #3b82f6;     
+    --secondary: #334155;         
+    --accent: #f59e0b;           
+    --success: #10b981;           
+    --danger: #ef4444;            
+    --light: #f8fafc;             
+    --dark: #1e293b;             
+
+    /* UI Elements */
+    --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --soft-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+    --border-radius-sm: 4px;
+    --border-radius-lg: 12px;
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    color: var(--secondary);
+    background-color: var(--light);
+}
+
+/* Layout & Structure */
+.container, .container-fluid {
+    padding: 2rem;
+}
+
+.border {
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    background-color: white;
+    border: none !important;
+    padding: 2rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.25rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent);
+    border-radius: 2px;
+}
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(to right, var(--primary), var(--secondary)) !important;
+    padding: 1rem 2rem;
+    box-shadow: var(--soft-shadow);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: white !important;
+    letter-spacing: -0.5px;
+}
+
+.navbar-brand:before {
+    content: '★ ';
+    color: var(--accent);
+}
+
+.nav-link {
+    font-weight: 600;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.25rem;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition);
+}
+
+.nav-link.text-white {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.nav-link.text-white:hover {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+}
+
+/* Buttons */
+.btn {
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition);
+    box-shadow: var(--soft-shadow);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.025em;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--card-shadow);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+.btn-success {
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    border-color: var(--danger);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+    background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.btn i {
+    margin-right: 0.375rem;
+}
+
+/* Tables */
+.table {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: var(--soft-shadow);
+}
+
+.table thead th {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    padding: 1rem;
+    border: none;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: rgba(241, 245, 249, 0.7);
+}
+
+.table tbody tr {
+    transition: var(--transition);
+}
+
+.table tbody tr:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.table td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-top: 1px solid #e2e8f0;
+}
+
+.table td:first-child {
+    font-weight: 600;
+}
+
+/* Room-specific styles */
+.rate-value {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.capacity-indicator {
+    display: flex;
+    align-items: center;
+}
+
+.capacity-indicator i {
+    color: var(--accent);
+    margin-right: 0.25rem;
+}
+
+/* Action buttons in table */
+.table .btn {
+    padding: 0.375rem 0.75rem;
+    margin-right: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--primary-light);
+    font-weight: 600;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container, .container-fluid {
+        padding: 1rem;
+    }
+
+    .border {
+        padding: 1.25rem;
+    }
+
+    .table thead th {
+        padding: 0.75rem;
+    }
+
+    .table td {
+        padding: 0.75rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Additional amenities for Room Management */
+.amenity-badge {
+    display: inline-block;
+    background-color: rgba(241, 245, 249, 1);
+    color: var(--secondary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.reservation-status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.status-available {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+}
+
+.status-occupied {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+}
+
+.status-maintenance {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: var(--accent);
+}
+
+/* Card for room details */
+.room-card {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+    box-shadow: var(--soft-shadow);
+    height: 100%;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow);
+}
+
+.room-card-header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.room-card-body {
+    padding: 1.5rem;
+}
+
+.room-card-footer {
+    padding: 1rem;
+    background-color: rgba(241, 245, 249, 0.7);
+    border-top: 1px solid #e2e8f0;
+}
+
+.form-control {
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--soft-shadow);
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--primary);
+}

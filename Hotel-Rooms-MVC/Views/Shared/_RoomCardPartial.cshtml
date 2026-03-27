@@ -1,0 +1,32 @@
+@* @page *@
+@model RoomDTO
+
+<div class="room-card">
+    <div class="room-header">
+        @Model.Name
+    </div>
+    <div class="room-body">
+        <div class="room-info">
+            <div class="room-info-item">
+                <span class="room-info-label">Rate:</span>
+                <span>$@Model.Rate</span>
+            </div>
+            <div class="room-info-item">
+                <span class="room-info-label">Space:</span>
+                <span>@Model.SpaceByMiter m²</span>
+            </div>
+            <div class="room-info-item">
+                <span class="room-info-label">Capacity:</span>
+                <span>@Model.NumberOfBeds people</span>
+            </div>
+            <div class="room-info-item">
+                <span class="room-info-label">Facilities:</span>
+                <span>@Model.Amenity</span>
+            </div>
+        </div>
+    </div>
+    <div class="room-footer">
+        <button class="btn btn-edit" data-id="@Model.Id">Edit</button>
+        <button class="btn btn-danger" data-id="@Model.Id">Delete</button>
+    </div>
+</div>

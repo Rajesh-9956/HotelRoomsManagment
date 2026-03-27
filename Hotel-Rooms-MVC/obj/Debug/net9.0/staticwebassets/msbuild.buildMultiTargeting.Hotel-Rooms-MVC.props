@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Hotel-Rooms-MVC.props" />
+</Project>

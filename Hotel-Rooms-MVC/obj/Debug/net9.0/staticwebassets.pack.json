@@ -1,0 +1,333 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/obj/Debug/net9.0/scopedcss/projectbundle/Hotel-Rooms-MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets/Hotel-Rooms-MVC.o0ca1vgtht.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/Images/Gym_breakfast.webp",
+      "PackagePath": "staticwebassets/Images/Gym_breakfast.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/Images/Gym_breakfast2.webp",
+      "PackagePath": "staticwebassets/Images/Gym_breakfast2.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/Images/HeroImage.webp",
+      "PackagePath": "staticwebassets/Images/HeroImage.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/Images/Luxury.webp",
+      "PackagePath": "staticwebassets/Images/Luxury.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/Images/Pool.webp",
+      "PackagePath": "staticwebassets/Images/Pool.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/Images/Wifi.webp",
+      "PackagePath": "staticwebassets/Images/Wifi.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/Images/pool-grat.webp",
+      "PackagePath": "staticwebassets/Images/pool-grat.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/css/bootstrap.css",
+      "PackagePath": "staticwebassets/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/css/home.css",
+      "PackagePath": "staticwebassets/css/home.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/favicon1.ico",
+      "PackagePath": "staticwebassets/favicon1.ico"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/favicon2.webp",
+      "PackagePath": "staticwebassets/favicon2.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/favicon3.webp",
+      "PackagePath": "staticwebassets/favicon3.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/favicon4.webp",
+      "PackagePath": "staticwebassets/favicon4.webp"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.js"
+    },
+    {
+      "Id": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Hotel-Rooms-MVC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Hotel-Rooms-MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.Hotel-Rooms-MVC.props",
+      "PackagePath": "build\\Hotel-Rooms-MVC.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Hotel-Rooms-MVC.props",
+      "PackagePath": "buildMultiTargeting\\Hotel-Rooms-MVC.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Hotel-Rooms-MVC.props",
+      "PackagePath": "buildTransitive\\Hotel-Rooms-MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

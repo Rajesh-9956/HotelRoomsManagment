@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "NgnzrlkwoTI=",
+  "success": true,
+  "projectFilePath": "/Users/aymanyassien/hotel-room_solution/Hotel-Rooms-MVC/Hotel-Rooms-MVC.csproj",
+  "expectedPackageFiles": [
+    "/Users/aymanyassien/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/Users/aymanyassien/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/Users/aymanyassien/.nuget/packages/microsoft.identitymodel.abstractions/8.6.0/microsoft.identitymodel.abstractions.8.6.0.nupkg.sha512",
+    "/Users/aymanyassien/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.6.0/microsoft.identitymodel.jsonwebtokens.8.6.0.nupkg.sha512",
+    "/Users/aymanyassien/.nuget/packages/microsoft.identitymodel.logging/8.6.0/microsoft.identitymodel.logging.8.6.0.nupkg.sha512",
+    "/Users/aymanyassien/.nuget/packages/microsoft.identitymodel.tokens/8.6.0/microsoft.identitymodel.tokens.8.6.0.nupkg.sha512",
+    "/Users/aymanyassien/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/aymanyassien/.nuget/packages/system.identitymodel.tokens.jwt/8.6.0/system.identitymodel.tokens.jwt.8.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

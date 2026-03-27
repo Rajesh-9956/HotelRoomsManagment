@@ -1,0 +1,96 @@
+@model RoomDTO
+
+@{
+    ViewData["Title"] = "Delete Room";
+}
+
+<div class="container">
+    <div class="border">
+        <h1>Delete Room</h1>
+        <form asp-action="DeleteRoom" method="post" id="deleteForm">
+            <div class="row">
+                <input hidden asp-for="Id" />
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <label asp-for="Name" class="form-label fw-bold"></label>
+                        <input asp-for="Name" disabled type="text" class="form-control" />
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Rate" class="form-label fw-bold"></label>
+                        <div class="input-group">
+                            <span class="input-group-text">SAR</span>
+                            <input asp-for="Rate" disabled type="number" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="SpaceByMiter" class="form-label fw-bold"></label>
+                        <div class="input-group">
+                            <input asp-for="SpaceByMiter" disabled type="number" class="form-control" />
+                            <span class="input-group-text">m²</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <label asp-for="NumberOfBeds" class="form-label fw-bold"></label>
+                        <div class="input-group">
+                            <input asp-for="NumberOfBeds" disabled type="number" class="form-control" />
+                            <span class="input-group-text"><i class="fas fa-bed"></i></span>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="ImageUrl" class="form-label fw-bold"></label>
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                        {
+                            <img src="@Model.ImageUrl" alt="Room Image" class="img-fluid mb-2" style="max-height: 150px; border-radius: var(--border-radius); box-shadow: var(--soft-shadow);" />
+                            <input asp-for="ImageUrl" disabled type="text" class="form-control" />
+                        }
+                        else
+                        {
+                            <input asp-for="ImageUrl" disabled type="text" class="form-control" placeholder="No image available" />
+                        }
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Amenity" class="form-label fw-bold"></label>
+                        <input asp-for="Amenity" disabled type="text" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label asp-for="Details" class="form-label fw-bold"></label>
+                <textarea asp-for="Details" disabled class="form-control" rows="4"></textarea>
+            </div>
+            <div class="d-flex mt-5">
+                <button type="submit" class="btn btn-danger" id="deleteButton">
+                    <i class="fas fa-minus-circle"></i> Delete Room
+                </button>
+                <a asp-action="IndexRoom" asp-controller="Room" class="btn btn-outline-primary ms-3">
+                    <i class="fas fa-arrow-left"></i> Back to List
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById('deleteForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure?',
+                text: 'This action will permanently delete the room!',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#ef4444',
+                cancelButtonColor: '#3b82f6',
+                confirmButtonText: '<i class="fas fa-trash"></i> Yes, delete it!',
+                cancelButtonText: '<i class="fas fa-times"></i> Cancel'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    this.submit();
+                }
+            });
+        });
+    </script>
+}

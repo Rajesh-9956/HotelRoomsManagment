@@ -1,0 +1,52 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model Hotel_Rooms_MVC.Models.ViewModel.bedNumberAddVM
+
+<title>Add New Bed Number </title>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="border">
+        <h1>Add New Bed Number</h1>
+        <form asp-action="AddNewBedNumber"  >
+            <div class="row">
+                <div asp-validation-summary="All" class="text-danger"></div>
+        
+                <div class="col-md-6">
+                    <!-- Left column fields -->
+                    <div class="mb-4">
+                        <label asp-for="BedNumberAddDto.bedNo" class="form-label fw-bold">Bed Number</label>
+                        <input asp-for="BedNumberAddDto.bedNo" type="number" class="form-control" id="" placeholder="209" required>
+                        <span asp-validation-for="BedNumberAddDto.bedNo" class="text-danger"></span>
+                    </div>
+        
+                    <div class="mb-4">
+                        <label asp-for="BedNumberAddDto.RoomId" class="form-label fw-bold"></label>
+                        <div class="input-group">
+                            <select asp-for="BedNumberAddDto.RoomId" class="form-select" asp-items="@Model.RoomListItems">
+                                <option disabled selected> # Select Room #</option>
+                            </select>
+                        </div>
+                        <span asp-validation-for="BedNumberAddDto.RoomId" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="d-flex mt-5">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-plus-circle"></i> Add Bed Number
+                </button>
+                <a asp-action="IndexBedNumber" asp-controller="BedNumber" class="btn btn-outline-primary ms-3">
+                    <i class="fas fa-arrow-left"></i> Back to List
+                </a>
+            </div>
+        </form>
+                        
+        @section Scripts {
+            <partial name="_ValidationScriptsPartial"/>
+        }
+    </div>
+</div>
+
+
+    
